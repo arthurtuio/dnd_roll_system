@@ -1,9 +1,10 @@
-from utils import roll_dice
+from src.modules.utils import roll_dice
 
 
 class DiceRoller:
     """
-    Class single responsibility is to roll dices, and return the results
+    Class single responsibility is to roll dices, and return the results.
+    Main method is named `run`.
     """
     def __init__(
         self,
@@ -47,8 +48,3 @@ class DiceRoller:
             results_list,
             summed_result
         )
-
-
-print(
-    DiceRoller(3, 8).run()
-)
